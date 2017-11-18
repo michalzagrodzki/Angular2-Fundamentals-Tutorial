@@ -15,7 +15,9 @@ import { MailService } from './mail.service';
   imports: [
     BrowserModule
   ],
-  providers: [MailService],
+  providers: [
+    { provide: 'mail', useClass: MailService }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
