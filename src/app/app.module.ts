@@ -16,8 +16,7 @@ import { MailService } from './mail.service';
     BrowserModule
   ],
   providers: [
-    { provide: 'mail', useClass: MailService },
-    { provide: 'api', useValue: 'http://localhost:3000' }
+    { provide: 'mail', useClass: MailService }
   ],
   bootstrap: [AppComponent]
 })
