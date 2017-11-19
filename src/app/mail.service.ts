@@ -4,9 +4,9 @@ import { Injectable } from '@angular/core';
 export class MailService {
 
   messages = [
-    'Message 1',
-    'Message 2',
-    'Message 3'
+    {id: 0, text: 'Message 1'},
+    {id: 1, text: 'Message 2'},
+    {id: 2, text: 'Message 3'}
   ]
 
   constructor() { }

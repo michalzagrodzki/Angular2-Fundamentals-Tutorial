@@ -1,8 +1,8 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <ul>
-    <li *ngFor="let message of mail.messages">{{ message }}</li>
-    <app-simple-form *ngFor="let message of mail.messages" [message]="message" (update)="onUpdate($event)">
+    <li *ngFor="let message of mail.messages">{{ message.text }}</li>
+    <app-simple-form *ngFor="let message of mail.messages" [message]="message.text" (update)="onUpdate($event)">
       {{ message }}
     </app-simple-form>
   </ul>
