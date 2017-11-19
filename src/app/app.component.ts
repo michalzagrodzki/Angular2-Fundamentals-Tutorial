@@ -6,5 +6,10 @@ import { Component, Inject } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  onUpdate(event){
+    console.log(event)
+  }
+
   constructor(@Inject('mail') private mail) {}
 }
