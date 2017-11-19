@@ -7,8 +7,8 @@ import { Component, Inject } from '@angular/core';
 })
 export class AppComponent {
 
-  onUpdate(event){
-    console.log(event)
+  onUpdate(id, text){
+    this.mail.update(id, text)
   }
 
   constructor(@Inject('mail') private mail) {}
