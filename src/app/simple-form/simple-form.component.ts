@@ -10,7 +10,7 @@ import { Component, OnInit, Input, Output, EventEmitter, ViewEncapsulation } fro
     (mousedown)="isMousedown = true" 
     (mouseup)="isMousedown = false" 
     (mouseleave)="isMousedown = false" >
-    <button (click)="update.emit({text: message})">Click me!</button>
+    <button class="white bg-black code" (click)="update.emit({text: message})">Click me!</button>
   `,
   styles: [`
   :host{
